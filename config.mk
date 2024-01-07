@@ -55,6 +55,11 @@ PRODUCT_PACKAGES += \
     SystemUIClocks-Metro \
     SystemUIClocks-NumOverlap
 
+PRODUCT_PACKAGES += \
+    HideSmartSpace \
+    SmartSpaceOffset \
+    HideClock
+
 # Custom Overlays
 PRODUCT_PACKAGES += \
     GlanceableHubConfigOverlay \
