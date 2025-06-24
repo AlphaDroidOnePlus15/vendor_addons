@@ -1,4 +1,4 @@
-# Copyright (C) 2017-2024 crDroid Android Project
+# Copyright (C) 2017-2025 crDroid Android Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -273,8 +273,8 @@ PRODUCT_PACKAGES += \
 # Navbar styles
 PRODUCT_PACKAGES += \
     NavbarAndroidOverlay \
-	NavbarAsusOverlay \
-	NavbarDoraOverlay \
+    NavbarAsusOverlay \
+    NavbarDoraOverlay \
     NavbarMotoOverlay \
     NavbarNexusOverlay \
     NavbarOldOverlay \
@@ -283,14 +283,6 @@ PRODUCT_PACKAGES += \
     NavbarSammyOverlay \
     NavbarTecnoCamonOverlay
 
-# Notification Themes
-PRODUCT_PACKAGES += \
-    NotifCyberPunk \
-    NotifDuoline \
-    NotifFluid \
-    NotifIOS \
-    NotifLayers
-
 # Power Menu Themes
 PRODUCT_PACKAGES += \
     PowerCyberPunk \
@@ -298,19 +290,6 @@ PRODUCT_PACKAGES += \
     PowerFluid \
     PowerIOS \
     PowerLayers
-
-# QS UI Style
-PRODUCT_PACKAGES += \
-    A11QSUI \
-    QSOutline \
-    QSTwoToneAccent \
-    QSTwoToneAccentTrans \
-    QSShaded \
-    QSCyberPunk \
-    QSNeumorph \
-    QSReflected \
-    QSSurround \
-    QSThin
 
 # Signal Icons
 PRODUCT_PACKAGES += \
@@ -346,10 +325,10 @@ PRODUCT_PACKAGES += \
     WingSignalOverlay \
     XperiaSignalOverlay \
     ZigZagSignalOverlay \
-	AuroraSignalOverlay \
-	FaintUISignalOverlay \
-	ForlornSignalOverlay \
-	PlumpySignalOverlay
+    AuroraSignalOverlay \
+    FaintUISignalOverlay \
+    ForlornSignalOverlay \
+    PlumpySignalOverlay
 
 # WiFi Icons
 PRODUCT_PACKAGES += \
@@ -365,10 +344,10 @@ PRODUCT_PACKAGES += \
     WeedWiFiOverlay \
     XperiaWiFiOverlay \
     ZigZagWiFiOverlay \
-	AuroraWiFiOverlay \
-	FaintUIWiFiOverlay \
-	ForlornWiFiOverlay \
-	PlumpyWiFiOverlay
+    AuroraWiFiOverlay \
+    FaintUIWiFiOverlay \
+    ForlornWiFiOverlay \
+    PlumpyWiFiOverlay
 
 # Themes
 PRODUCT_PACKAGES += \
