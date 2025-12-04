@@ -56,6 +56,10 @@ PRODUCT_PACKAGES += \
     SystemUIClocks-Metro \
     SystemUIClocks-NumOverlap
 
+# Custom Overlays
+PRODUCT_PACKAGES += \
+    PixelLauncherOverlayCustom
+
 # Fonts
 PRODUCT_PACKAGES += \
     fonts_customization.xml \
