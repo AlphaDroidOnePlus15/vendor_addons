@@ -943,6 +943,12 @@
     <family customizationType="new-named-family" name="nothingdot57">
         <font weight="400" style="normal" postScriptName="Ndot-57">NDot57Caps.otf</font>
     </family>
+    <family customizationType="new-named-family" name="nothingdot57aligned">
+        <font weight="400" style="normal" postScriptName="Ndot-57-Aligned">Ndot-57-Aligned.otf</font>
+    </family>
+    <alias name="ndot" to="NDot55" />
+    <alias name="ndot57" to="NDot57" />
+    <alias name="ndot57-align" to="NDot57-Aligned" /> 
 
     <!-- NothingDot -->
     <family customizationType="new-named-family" name="pixelwars">

@@ -118,6 +118,7 @@ PRODUCT_PACKAGES += \
     ClockFontNeonDiscoOverlay \
     ClockFontNinjasOverlay \
     ClockFontNokiaPureOverlay \
+    ClockFontNothingDotHeadlineOverlay \
     ClockFontNunitoOverlay \
     ClockFontOneplusSansOverlay \
     ClockFontOneplusSlateOverlay \
