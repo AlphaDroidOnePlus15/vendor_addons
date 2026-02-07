@@ -14,6 +14,12 @@
 LOCAL_PATH := $(call my-dir)
 include $(call all-subdir-makefiles,$(LOCAL_PATH))
 
+# Prebuilt apks
+ifeq ($(TARGET_INCLUDE_SIMPLE_TUNE),true)
+  PRODUCT_PACKAGES += \
+    OuterTune
+endif
+
 ifeq ($(TARGET_HAS_UDFPS),true)
 PRODUCT_PACKAGES += \
     UdfpsIcons \
