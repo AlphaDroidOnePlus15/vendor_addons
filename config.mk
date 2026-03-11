@@ -74,7 +74,7 @@ PRODUCT_PACKAGES += \
 # Fonts
 PRODUCT_PACKAGES += \
     fonts_customization.xml \
-		ClockFont3DIsometricBlackOverlay \
+    ClockFont3DIsometricBlackOverlay \
     ClockFont3DIsometricBoldOverlay \
     ClockFontACFilmstripOverlay \
     ClockFontAccuratistOverlay \
@@ -229,7 +229,17 @@ PRODUCT_PACKAGES += \
     NavbarOnePlusOverlay \
     NavbarOneUiOverlay \
     NavbarSammyOverlay \
-    NavbarTecnoCamonOverlay
+    NavbarTecnoCamonOverlay \
+    NavbarAndroidOverlayPixel \
+    NavbarAsusOverlayPixel \
+    NavbarDoraOverlayPixel \
+    NavbarMotoOverlayPixel \
+    NavbarNexusOverlayPixel \
+    NavbarOldOverlayPixel \
+    NavbarOnePlusOverlayPixel \
+    NavbarOneUiOverlayPixel \
+    NavbarSammyOverlayPixel \
+    NavbarTecnoCamonOverlayPixel
 
 # Themes
 PRODUCT_PACKAGES += \
