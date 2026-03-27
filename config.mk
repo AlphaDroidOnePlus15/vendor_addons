@@ -213,7 +213,8 @@ PRODUCT_PACKAGES += \
     FontSonySketchOverlay \
     FontStoropiaOverlay \
     FontSurferOverlay \
-    FontUbuntuOverlay
+    FontUbuntuOverlay \
+    FontExtFontOverlay
 
 # Navbar styles
 PRODUCT_PACKAGES += \
