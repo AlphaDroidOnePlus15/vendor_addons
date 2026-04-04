@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="config_backGestureArrowMode">1</integer>
+    <bool name="config_backGestureRegionSamplingEnabled">true</bool>
+
+    <dimen name="navigation_edge_arrow_thickness">1.5dp</dimen>
+
+    <item name="navigation_edge_entry_background_alpha" format="float" type="dimen">0.0</item>
+    <dimen name="navigation_edge_entry_margin">1.5dp</dimen>
+    <dimen name="navigation_edge_entry_arrow_length">0dp</dimen>
+    <dimen name="navigation_edge_entry_arrow_height">13.5dp</dimen>
+
+    <item name="navigation_edge_pre_threshold_background_alpha" format="float" type="dimen">0.0</item>
+    <dimen name="navigation_edge_pre_threshold_margin">1.5dp</dimen>
+    <dimen name="navigation_edge_pre_threshold_arrow_length">14dp</dimen>
+    <dimen name="navigation_edge_pre_threshold_arrow_height">11.5dp</dimen>
+
+    <item name="navigation_edge_active_background_alpha" format="float" type="dimen">0.0</item>
+    <dimen name="navigation_edge_active_arrow_length">12dp</dimen>
+    <dimen name="navigation_edge_active_arrow_height">13.5dp</dimen>
+
+    <item name="navigation_edge_stretch_background_alpha" format="float" type="dimen">0.0</item>
+    <dimen name="navigation_edge_stretched_arrow_length">11dp</dimen>
+    <dimen name="navigation_edge_stretched_arrow_height">13dp</dimen>
+</resources>
