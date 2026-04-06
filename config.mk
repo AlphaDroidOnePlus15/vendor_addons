@@ -243,7 +243,15 @@ PRODUCT_PACKAGES += \
 
 # Themes
 PRODUCT_PACKAGES += \
-    AndroidBlackThemeOverlay
+    AndroidBlackThemeOverlay \
+    BackGestureDotTrailOverlay \
+    NothingChargingAnimationOverlay \
+    MotoChargingAnimationOverlay \
+    BatteryStyleiOS15Overlay \
+    BatteryStyleiOS16Overlay \
+    BatteryStyleOneUI7Overlay \
+    BatteryStyleOrigamiOverlay \
+    BatteryStyleSmileyOverlay
 
 # Include {Lato,Rubik} fonts
 $(call inherit-product-if-exists, external/google-fonts/lato/fonts.mk)
