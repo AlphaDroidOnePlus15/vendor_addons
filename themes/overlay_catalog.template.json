@@ -1,0 +1,300 @@
+{
+  "version": 4,
+  "lastUpdated": "2026-04-09T00:00:00Z",
+  "meta": {
+    "description": "Local overlay catalog for AlphaVisuals. APKs ship via PRODUCT_PACKAGES in vendor/addons; this JSON supplies titles, authors, categories, and ThemeEngine category keys for main + detail screens.",
+    "delivery": "local",
+    "authorDefault": "",
+    "uiStateLabels": "enabled_disabled",
+    "excludes": ["fonts"],
+    "notes": [
+      "Per-theme theme.author: set for real attribution; omit or empty → meta.authorDefault (empty hides \"by\" line on detail).",
+      "Each overlay.componentId must match the overlay manifest android:category (Settings.Secure / ThemeEngine key).",
+      "targets[] lists the same engine keys applied when enabling that overlay (usually one entry matching componentId).",
+      "downloadUrl / fileSize are optional; omit for purely local packages. A generator script can fill them for sideload mirrors.",
+      "On-device path: /product/etc/assets/overlay_catalog.json (source: vendor/addons/themes/overlay_catalog.json, regenerate with tools/adapt_ax_catalog.py). Lives on product image, not AlphaVisuals APK resources. Keep themes[] in sync with iconpack_packages.mk and icon overlays."
+    ]
+  },
+  "repository": {
+    "name": "Alpha vendor addons (local)",
+    "description": "Bundled theme catalog co-located with vendor/addons/themes",
+    "maintainer": "Alpha / AxionOS"
+  },
+  "components": [
+    {
+      "id": "signal_icon",
+      "name": "Signal Icons",
+      "description": "Mobile signal indicator icons",
+      "engineCategory": "android.theme.customization.signal_icon",
+      "targetPackage": "android",
+      "icon": "signal"
+    },
+    {
+      "id": "wifi_icon",
+      "name": "WiFi Icons",
+      "description": "WiFi signal indicator icons",
+      "engineCategory": "android.theme.customization.wifi_icon",
+      "targetPackage": "android",
+      "icon": "wifi"
+    },
+    {
+      "id": "back_gesture",
+      "name": "Back Gesture",
+      "description": "Back gesture indicator appearance",
+      "engineCategory": "android.theme.customization.back_gesture",
+      "targetPackage": "com.android.systemui",
+      "icon": "swipe_left"
+    },
+    {
+      "id": "charging_animation",
+      "name": "Charging Animation",
+      "description": "Wired charging animation style",
+      "engineCategory": "android.theme.customization.charging_animation",
+      "targetPackage": "com.android.systemui",
+      "icon": "bolt"
+    },
+    {
+      "id": "battery_style",
+      "name": "Battery Style",
+      "description": "Battery icon shape themes",
+      "engineCategory": "android.theme.customization.battery_style",
+      "targetPackage": "com.android.systemui",
+      "icon": "battery_full"
+    },
+    {
+      "id": "icon_pack_android",
+      "name": "Icon pack (Android)",
+      "description": "Themed Android icons",
+      "engineCategory": "android.theme.customization.icon_pack.android",
+      "targetPackage": "android",
+      "icon": "category"
+    },
+    {
+      "id": "icon_pack_systemui",
+      "name": "Icon pack (System UI)",
+      "description": "Themed System UI icons",
+      "engineCategory": "android.theme.customization.icon_pack.systemui",
+      "targetPackage": "com.android.systemui",
+      "icon": "category"
+    }
+  ],
+  "categories": [
+    {
+      "id": "ui_style",
+      "name": "UI Style",
+      "description": "Quick Settings tile and brightness slider decoration (System UI)",
+      "icon": "dashboard_customize"
+    },
+    {
+      "id": "signal_icons",
+      "name": "Signal Icons",
+      "description": "Mobile signal bar themes",
+      "icon": "signal_cellular_alt"
+    },
+    {
+      "id": "wifi_icons",
+      "name": "WiFi Icons",
+      "description": "WiFi signal bar themes",
+      "icon": "wifi"
+    },
+    {
+      "id": "icon_packs",
+      "name": "Icon Packs",
+      "description": "System-wide icon style themes",
+      "icon": "category"
+    },
+    {
+      "id": "charging_animation",
+      "name": "Charging Animation",
+      "description": "Wired charging animation styles",
+      "icon": "bolt"
+    },
+    {
+      "id": "back_gesture",
+      "name": "Back Gesture",
+      "description": "Back gesture indicator styles",
+      "icon": "swipe_left"
+    },
+    {
+      "id": "battery_style",
+      "name": "Battery Style",
+      "description": "Battery icon style themes",
+      "icon": "battery_full"
+    }
+  ],
+  "ui_styles": [
+    { "id": "system_default", "author": "AOSP" },
+    { "id": "outline", "author": "AlphaDroid" },
+    { "id": "neon", "author": "AlphaDroid" },
+    { "id": "bevel", "author": "AlphaDroid" },
+    { "id": "gradient", "author": "AlphaDroid" },
+    { "id": "reflective", "author": "AlphaDroid" },
+    { "id": "slash", "author": "AlphaDroid" },
+    { "id": "aerogel", "author": "AlphaDroid" },
+    { "id": "metallic", "author": "AlphaDroid" }
+  ],
+  "themes": [
+    {
+      "id": "aquarium_signal",
+      "name": "Aquarium Signal",
+      "description": "Aquarium signal icons",
+      "author": "rdx420",
+      "version": "1.0.0",
+      "versionCode": 1,
+      "minSdk": 35,
+      "previewImages": [],
+      "category": "signal_icons",
+      "tags": ["signal", "statusbar"],
+      "isUnified": false,
+      "overlays": [
+        {
+          "componentId": "android.theme.customization.signal_icon",
+          "packageName": "com.android.systemui.signalbar_aa",
+          "targetPackage": "android",
+          "label": "Signal",
+          "targets": ["android.theme.customization.signal_icon"]
+        }
+      ]
+    },
+    {
+      "id": "aurora_wifi",
+      "name": "Aurora WiFi",
+      "description": "Aurora WiFi icons",
+      "author": "DrDisagree",
+      "version": "1.0.0",
+      "versionCode": 1,
+      "minSdk": 35,
+      "previewImages": [],
+      "category": "wifi_icons",
+      "tags": ["wifi", "statusbar"],
+      "isUnified": false,
+      "overlays": [
+        {
+          "componentId": "android.theme.customization.wifi_icon",
+          "packageName": "com.custom.overlay.systemui.wifiAurora",
+          "targetPackage": "android",
+          "label": "Wi‑Fi",
+          "targets": ["android.theme.customization.wifi_icon"]
+        }
+      ]
+    },
+    {
+      "id": "iconpack_aurora",
+      "name": "Aurora",
+      "description": "Aurora icon pack",
+      "author": "DrDisagree",
+      "version": "1.0.0",
+      "versionCode": 1,
+      "minSdk": 35,
+      "previewImages": [],
+      "category": "icon_packs",
+      "tags": ["icons", "system"],
+      "isUnified": false,
+      "overlays": [
+        {
+          "componentId": "android.theme.customization.icon_pack.android",
+          "packageName": "com.android.theme.icon_pack.aurora.android",
+          "targetPackage": "android",
+          "label": "Android",
+          "targets": ["android.theme.customization.icon_pack.android"]
+        },
+        {
+          "componentId": "android.theme.customization.icon_pack.systemui",
+          "packageName": "com.android.theme.icon_pack.aurora.systemui",
+          "targetPackage": "com.android.systemui",
+          "label": "System UI",
+          "targets": ["android.theme.customization.icon_pack.systemui"]
+        }
+      ]
+    },
+    {
+      "id": "back_gesture_dot_trail",
+      "name": "Dot Trail",
+      "description": "Dot trail back gesture indicator",
+      "author": "AxionOS",
+      "version": "1.0.0",
+      "versionCode": 1,
+      "minSdk": 36,
+      "previewImages": [],
+      "category": "back_gesture",
+      "tags": ["back_gesture", "gesture", "dot"],
+      "isUnified": true,
+      "supportsRegionSampling": true,
+      "overlays": [
+        {
+          "componentId": "android.theme.customization.back_gesture",
+          "packageName": "com.android.systemui.back_gesture.dot_trail",
+          "targetPackage": "com.android.systemui",
+          "label": "Back gesture",
+          "targets": ["android.theme.customization.back_gesture"]
+        }
+      ]
+    },
+    {
+      "id": "charging_anim_nothing",
+      "name": "Nothing OS",
+      "description": "Nothing Phone ripple charging animation with glare effect",
+      "author": "AxionOS",
+      "version": "1.0",
+      "versionCode": 1,
+      "minSdk": 36,
+      "previewImages": [],
+      "category": "charging_animation",
+      "tags": ["charging_animation", "nothing", "ripple"],
+      "isUnified": true,
+      "overlays": [
+        {
+          "componentId": "android.theme.customization.charging_animation",
+          "packageName": "com.android.systemui.charging_animation.nothing",
+          "targetPackage": "com.android.systemui",
+          "label": "Charging animation",
+          "targets": ["android.theme.customization.charging_animation"]
+        }
+      ]
+    },
+    {
+      "id": "charging_anim_moto",
+      "name": "Moto",
+      "description": "Motorola wired charging animation",
+      "author": "AxionOS",
+      "version": "1.0",
+      "versionCode": 1,
+      "minSdk": 36,
+      "previewImages": [],
+      "category": "charging_animation",
+      "tags": ["charging_animation", "motorola", "wire"],
+      "isUnified": true,
+      "overlays": [
+        {
+          "componentId": "android.theme.customization.charging_animation",
+          "packageName": "com.android.systemui.charging_animation.moto",
+          "targetPackage": "com.android.systemui",
+          "label": "Charging animation",
+          "targets": ["android.theme.customization.charging_animation"]
+        }
+      ]
+    },
+    {
+      "id": "battery_ios15",
+      "name": "iOS 15",
+      "description": "iOS 15-style horizontal battery with rounded fill",
+      "author": "Iconify",
+      "version": "1.0",
+      "versionCode": 1,
+      "minSdk": 36,
+      "previewImages": [],
+      "category": "battery_style",
+      "tags": ["battery_style", "ios", "horizontal"],
+      "isUnified": true,
+      "overlays": [
+        {
+          "componentId": "android.theme.customization.battery_style",
+          "packageName": "com.android.systemui.battery.ios15",
+          "targetPackage": "com.android.systemui",
+          "label": "Battery style",
+          "targets": ["android.theme.customization.battery_style"]
+        }
+      ]
+    }
+  ]
+}

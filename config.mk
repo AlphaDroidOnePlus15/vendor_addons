@@ -11,6 +11,7 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+
 LOCAL_PATH := $(call my-dir)
 include $(call all-subdir-makefiles,$(LOCAL_PATH))
 
@@ -241,6 +242,68 @@ PRODUCT_PACKAGES += \
     NavbarSammyOverlayPixel \
     NavbarTecnoCamonOverlayPixel
 
+# Icon packs
+include vendor/addons/themes/iconpacks/iconpack_packages.mk
+
+# Status bar Wi‑Fi icon styles
+PRODUCT_PACKAGES += \
+    WifiIconCompactOverlay \
+    AuroraWiFiOverlay \
+    BarsWiFiOverlay \
+    DoraWiFiOverlay \
+    FaintUIWiFiOverlay \
+    ForlornWiFiOverlay \
+    GradiconWiFiOverlay \
+    InsideWiFiOverlay \
+    NothingDotWiFiOverlay \
+    PlumpyWiFiOverlay \
+    RoundWiFiOverlay \
+    SneakyWiFiOverlay \
+    StrokeWiFiOverlay \
+    WavyWiFiOverlay \
+    WeedWiFiOverlay \
+    XperiaWiFiOverlay \
+    ZigZagWiFiOverlay
+
+# Status bar cellular / signal icon styles
+PRODUCT_PACKAGES += \
+    SignalIconCompactOverlay \
+    AquariumSignalOverlay \
+    AuroraSignalOverlay \
+    BarsSignalOverlay \
+    ButterflySignalOverlay \
+    CircleSignalOverlay \
+    DaunSignalOverlay \
+    DecSignalOverlay \
+    DeepSignalOverlay \
+    DoraSignalOverlay \
+    EqualSignalOverlay \
+    FaintUISignalOverlay \
+    FanSignalOverlay \
+    ForlornSignalOverlay \
+    GradiconSignalOverlay \
+    HuaweiSignalOverlay \
+    InsideSignalOverlay \
+    IosSignalOverlay \
+    MiniSignalOverlay \
+    NothingDotSignalOverlay \
+    PillsSignalOverlay \
+    PlumpySignalOverlay \
+    RelSignalOverlay \
+    RomanSignalOverlay \
+    RoundSignalOverlay \
+    ScrollSignalOverlay \
+    SeaSignalOverlay \
+    SneakySignalOverlay \
+    StackSignalOverlay \
+    StrokeSignalOverlay \
+    WannuiSignalOverlay \
+    WavySignalOverlay \
+    WindowsSignalOverlay \
+    WingSignalOverlay \
+    XperiaSignalOverlay \
+    ZigZagSignalOverlay
+
 # Themes
 PRODUCT_PACKAGES += \
     AndroidBlackThemeOverlay \
@@ -259,3 +322,7 @@ $(call inherit-product-if-exists, external/google-fonts/rubik/fonts.mk)
 
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,vendor/addons/prebuilt/product/fonts,$(TARGET_COPY_OUT_PRODUCT)/fonts)
+
+# AlphaVisuals: theme catalog on product image (not APK resources; regenerate with themes/tools/adapt_ax_catalog.py)
+PRODUCT_COPY_FILES += \
+    vendor/addons/themes/overlay_catalog.json:$(TARGET_COPY_OUT_PRODUCT)/etc/assets/overlay_catalog.json
