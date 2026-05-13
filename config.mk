@@ -60,11 +60,6 @@ PRODUCT_PACKAGES += \
     SystemUIClocks-NumOverlap \
     SystemUIClocks-Weather
 
-PRODUCT_PACKAGES += \
-    HideSmartSpace \
-    SmartSpaceOffset \
-    HideClock
-
 # Custom Overlays
 PRODUCT_PACKAGES += \
     GlanceableHubConfigOverlay \
