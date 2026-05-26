@@ -149,14 +149,6 @@ EXTRA_COMPONENTS: list[dict[str, Any]] = [
         "targetPackage": "com.android.launcher3",
         "icon": "category",
     },
-    {
-        "id": "icon_pack_themepicker",
-        "name": "Icon pack (ThemePicker)",
-        "description": "Themed ThemePicker icons",
-        "engineCategory": PREFIX + "icon_pack.themepicker",
-        "targetPackage": "com.android.wallpaper",
-        "icon": "category",
-    },
 ]
 
 
