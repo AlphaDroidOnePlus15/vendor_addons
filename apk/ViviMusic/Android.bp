@@ -1,0 +1,11 @@
+android_app_import {
+    name: "ViviMusic",
+    apk: "ViviMusic.apk",
+    presigned: true,
+    preprocessed: true,
+    product_specific: true,
+    overrides: ["Twelve"],
+    dex_preopt: {
+        enabled: false,
+    },
+}
